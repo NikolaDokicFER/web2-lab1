@@ -1,7 +1,5 @@
 {
-    "compilerOptions": {     
-	  "module": "ESNext",
-        "moduleResolution": "Node",        
+    "compilerOptions": {             
         "esModuleInterop": true,
         "outDir": "./dist",
         "rootDir": "./src",        
@@ -12,10 +10,6 @@
         "resolveJsonModule": true,
 	  "types": [ "node" ],
 	  "typeRoots": [ "../node_modules/@types" ]
-	},
-	"ts-node": {
-        "esm": true,
-	"experimentalSpecifierResolution": true
-    	}
+	}
 }
 
