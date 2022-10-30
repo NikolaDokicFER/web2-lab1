@@ -5,10 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run clean; tsc; npm run copy-views; npm run copy-views",
-    "clean": "rm -rf dist",
-    "copy-views": "cp -r src/views dist/views",
-    "start": "node dist/app.ts"
+    "build": "npm run clean",
+    "start": "node app.ts"
   },
   "author": "",
   "license": "ISC",
