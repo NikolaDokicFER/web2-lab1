@@ -12,10 +12,10 @@
         <h2>
             <p class="user-name">User: <%= user.email %></p>
             <button on>
-                <a href="https://localhost:4080/admin"> ADMIN </a>
+                <a href="https://web2-lab1-jgzs.onrender.com/admin"> ADMIN </a>
             </button>
             <button on>
-                <a href="https://localhost:4080/logout"> LOG OUT </a>
+                <a href="https://web2-lab1-jgzs.onrender.com/logout"> LOG OUT </a>
             </button>
         </h2>
         <div class="set-table-left">
@@ -54,7 +54,7 @@
                             <td><%= comments.comment[j].text %></td>
                             <td><%= comments.comment[j].date %></td>
                             <% if(comments.comment[j].user === user.email){ %>
-                                <td><button><a href="https://localhost:4080/home/<%=comments.comment[j].id%>">Izbriši</a></button></td>
+                                <td><button><a href="https://web2-lab1-jgzs.onrender.com/home/<%=comments.comment[j].id%>">Izbriši</a></button></td>
                             <% } %>
                         </tr>
                         <% }} %>

@@ -12,10 +12,10 @@
         <h2>
             <p class="user-name">User: <%= user.email %></p>
             <button on>
-                <a href="https://localhost:4080/home"> HOME </a>
+                <a href="https://web2-lab1-jgzs.onrender.com/home"> HOME </a>
             </button>
             <button on>
-                <a href="https://localhost:4080/logout"> LOG OUT </a>
+                <a href="https://web2-lab1-jgzs.onrender.com/logout"> LOG OUT </a>
             </button>
         </h2>
         <div class="set-table-left">
@@ -54,7 +54,7 @@
                             <td><%= comments.comment[j].user %></td>
                             <td><%= comments.comment[j].text %></td>
                             <td><%= comments.comment[j].date %></td>
-                            <td><button><a href="https://localhost:4080/admin/<%=comments.comment[j].id%>">Izbriši</a></button></td>
+                            <td><button><a href="https://web2-lab1-jgzs.onrender.com/admin/<%=comments.comment[j].id%>">Izbriši</a></button></td>
                         </tr>
                         <% }} %>
                 </table>
@@ -84,14 +84,14 @@
     <script>
         function bttn(round, match){
             var a = prompt("Unesi rezultat");
-            window.open(`https://localhost:4080/admin/${round}/${match}/${a}`,"_self")
+            window.open(`https://web2-lab1-jgzs.onrender.com/admin/${round}/${match}/${a}`,"_self")
         }
 
         function bttn2(spot){
             var name = prompt("Unesi ime kluba");
             var gd = prompt("Unesi gol razliku");
             var points = prompt("Unesi bodove");
-            window.open(`https://localhost:4080/admin/${spot}/${name}/${gd}/${points}`,"_self")
+            window.open(`https://web2-lab1-jgzs.onrender.com/admin/${spot}/${name}/${gd}/${points}`,"_self")
         }
     </script>
 </html>
