@@ -1,0 +1,180 @@
+{
+
+		"round": [
+		{
+			"date": "15.07.2022.",
+			"results": [
+				{	
+					"id": 0,
+					"home": "GNK Dinamo Zagreb",
+					"away": "NK Lokomotiva Zagreb",
+					"score": "3-2"
+				},
+				{		
+					"id": 1,			
+					"home": "NK Osijek",
+					"away": "HNK Gorica",
+					"score": "2-1"
+				},
+				{
+					"id": 2,
+					"home": "HNK Šibenik",
+					"away": "HNK Rijeka",
+					"score": "0-1"
+				},
+				{
+					"id": 3,
+					"home": "NK Varaždin",
+					"away": "NK Slaven Belupo",
+					"score": "0-1"
+				},
+				{
+					"id": 4,
+					"home": "NK Istra 1961",
+					"away": "HNK Hajduk Split",
+					"score": "0-2"
+				}
+			]
+		},
+		{
+			"date": "22.07.2022.",
+			"results": [
+				{
+					"id": 5,
+					"home": "NK Slaven Belupo",
+					"away": "GNK Dinamo Zagreb",
+					"score": "1-5"
+				},
+				{
+					"id": 6,
+					"home": "NK Lokomotiva Zagreb",
+					"away": "NK Osijek",
+					"score": "2-1"
+				},
+				{
+					"id": 7,
+					"home": "HNK Gorica",
+					"away": "HNK Šibenik",
+					"score": "0-0"
+				},
+				{
+					"id": 8,
+					"home": "HNK Hajduk Split",
+					"away": "HNK Rijeka",
+					"score": "2-0"
+				},
+				{
+					"id": 9,
+					"home": "NK Istra 1961",
+					"away": "NK Varaždin",
+					"score": "1-2"
+				}
+			]
+		},
+		{
+			"date": "29.07.2022.",
+			"results": [
+				{
+					"id": 10,
+					"home": "GNK Dinamo Zagreb",
+					"away": "NK Istra 1961",
+					"score": "4-1"
+				},
+				{
+					"id": 11,
+					"home": "NK Osijek",
+					"away": "NK Slaven Belupo",
+					"score": "0-0"
+				},
+				{
+					"id": 12,
+					"home": "HNK Šibenik",
+					"away": "NK Lokomotiva Zagreb",
+					"score": "2-1"
+				},
+				{
+					"id": 13,
+					"home": "NK Varaždin",
+					"away": "HNK Hajduk Split",
+					"score": "0-2"
+				},
+				{
+					"id": 14,
+					"home": "HNK Rijeka",
+					"away": "HNK Gorica",
+					"score": "1-1"
+				}
+			]
+		},
+		{
+			"date": "05.08.2022.",
+			"results": [
+				{
+					"id": 15,
+					"home": "NK Istra 1961",
+					"away": "NK Osijek",
+					"score": "1-0"
+				},
+				{
+					"id": 16,
+					"home": "HNK Hajduk Split",
+					"away": "HNK Gorica",
+					"score": "0-0"
+				},
+				{
+					"id": 17,
+					"home": "NK Lokomotiva Zagreb",
+					"away": "HNK Rijeka",
+					"score": "3-1"
+				},
+				{
+					"id": 18,
+					"home": "NK Varaždin",
+					"away": "GNK Dinamo Zagreb",
+					"score": "1-1"
+				},
+				{
+					"id": 19,
+					"home": "NK Slaven Belupo",
+					"away": "HNK Šibenik",
+					"score": "0-0"
+				}
+			]
+		},
+{
+			"date": "12.08.2022.",
+			"results": [
+				{
+					"id": 20,
+					"home": "NK Osijek",
+					"away": "NK Varaždin",
+					"score": ""
+				},
+				{
+					"id": 21,
+					"home": "HNK Šibenik",
+					"away": "NK Istra 1961",
+					"score": ""
+				},
+				{
+					"id": 22,
+					"home": "GNK Dinamo Zagreb",
+					"away": "HNK Hajduk Split",
+					"score": ""
+				},
+				{
+					"id": 23,
+					"home": "HNK Gorica",
+					"away": "NK Lokomotiva Zagreb",
+					"score": ""
+				},
+				{
+					"id": 24,
+					"home": "HNK Rijeka",
+					"away": "NK Slaven Belupo",
+					"score": ""
+				}
+			]
+		}
+		]
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HNL rezultati</title>
+        <link rel='stylesheet' href='/styles/main.css' />
+    </head>
+    
+    <body>
+        <h1>
+            HNL sezona 2022/2023
+        </h1>
+        <h2>
+            <p class="user-name">User: <%= user.email %></p>
+            <button on>
+                <a href="https://localhost:4080/home"> HOME </a>
+            </button>
+            <button on>
+                <a href="https://localhost:4080/logout"> LOG OUT </a>
+            </button>
+        </h2>
+        <div class="set-table-left">
+            <% var commentId = -1 %>
+            <% for(var i=0; i<results.round.length; i++){ %>
+            <p><%= i + 1 %>. kolo, <%= results.round[i].date %> </p>
+            <table>
+                <tr>
+                    <th width="180px">Domaći</th>
+                    <th width="50px">Rezultat</th>
+                    <th width="180px">Gosti</th>
+                </tr>
+                <% for(var j=0; j<5; j++){ %>
+                <tr>
+                    <td><%= results.round[i].results[j].home %></td>
+                    <td class="set-center"><%= results.round[i].results[j].score %></td>
+                    <td><%= results.round[i].results[j].away %></td>
+                    <td><button onclick="bttn(<%=i%>, <%=j%>)">Uredi</button></td>
+                </tr>
+                <% } %>
+            </table>
+            <div>
+                <p><%= i + 1 %>. kolo komentari:</p>
+                <table>
+                    <tr>
+                        <th width="120px">Korisnik</th>
+                        <th width="210px">Komentar</th>
+                        <th width="80px">Datum</th>
+                        <th width="40px"></th>
+                    </tr>
+                    <% for(var j=0; j < comments.comment.length; j++){ 
+                        commentId++;
+                        if(i == comments.comment[j].round){
+                        %>
+                        <tr>
+                            <td><%= comments.comment[j].user %></td>
+                            <td><%= comments.comment[j].text %></td>
+                            <td><%= comments.comment[j].date %></td>
+                            <td><button><a href="https://localhost:4080/admin/<%=comments.comment[j].id%>">Izbriši</a></button></td>
+                        </tr>
+                        <% }} %>
+                </table>
+            </div>
+            <% } %>
+        </div>
+        <div class="set-table-right">
+            <p>Trenutno stanje tablice HNL-a</p>
+            <table>
+                <tr>
+                    <th width="130px">Ekipa</th>
+                    <th width="20px">Gol razlika</th>
+                    <th>Bodovi</th>
+                </tr>
+                <% for(var i = 0; i < 10; i++) { %>
+                <tr>
+                    <td><%= table.team[i].name %></td>
+                    <td class="set-center"><%= table.team[i].gd %></td>
+                    <td class="set-center"><%= table.team[i].points %></td>
+                    <td><button onclick="bttn2(<%=i%>)">Uredi</button></td>
+                </tr>
+                <% } %>
+            </table>
+        </div>
+    </body>
+
+    <script>
+        function bttn(round, match){
+            var a = prompt("Unesi rezultat");
+            window.open(`https://localhost:4080/admin/${round}/${match}/${a}`,"_self")
+        }
+
+        function bttn2(spot){
+            var name = prompt("Unesi ime kluba");
+            var gd = prompt("Unesi gol razliku");
+            var points = prompt("Unesi bodove");
+            window.open(`https://localhost:4080/admin/${spot}/${name}/${gd}/${points}`,"_self")
+        }
+    </script>
+</html>
