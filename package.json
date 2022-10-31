@@ -3,7 +3,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run clean; tsc; npm run copy-views; npm run copy-views",
     "clean": "rm -rf dist",
-    "copy-views": "cp -r src/views dist/views; cp -r src/jsons dist/jsons; cp -r src/css dist/css",
+    "copy-views": "cp -r src/views dist/views; cp -r src/jsons dist/jsons; cp -r src/styles dist/styles",
     "start": "node dist/app.js"
   },
   "author": "",
