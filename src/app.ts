@@ -13,9 +13,9 @@ app.set("views", path.join(__dirname, "views"));
 app.use("/styles",express.static(__dirname + "/styles"));
 app.set('view engine', 'ejs');
 
-let results = require('./rounds.json');
-let table = require('./table.json');
-let comments = require('./comments.json');
+let results = require('./jsons/rounds.json');
+let table = require('./jsons/table.json');
+let comments = require('./jsons/comments.json');
 
 const externalUrl = process.env.RENDER_EXTERNAL_URL;
 const port = externalUrl && process.env.PORT ? parseInt(process.env.PORT) : 4080
